@@ -1,0 +1,65 @@
+body{background-color: #f1f3f4;}
+body,html{width: 100%; height: 100%;}
+
+/* header */
+.header .menu{position: sticky; top: 0; height: 55px; width: 100%; margin-bottom: 20px; border-bottom: 3px solid orange; z-index: 3; display: flex;}
+.header .menu .logo{height: 45px; margin: 5px 10px;}
+.header .menu .form-search{width: 59%; display: inline-flex;}
+.header .menu .form-control{margin-left: 40px; margin-right: -10px; margin-top: 10px;border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-color: orange;}
+.header .menu i.fa.fa-search{cursor: pointer; margin: 6px; color: #fff;}
+.header .menu .input-group-text{margin: 9px 10px 3px 0px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; background-color: orange;}
+.header .menu .menu-right{width: 41%; height: 52px; float: right;}
+.header .menu .menu-right ul{display: inline-flex; float: right;}
+.header .menu .menu-right ul li{height: 52px; background-color: orange; border-left: 1px solid #fff; padding: 18px 20px; text-align: center; cursor: pointer;}
+.header .menu .menu-right ul li a{color: #fff; font-size: 12px ;text-decoration: none; text-transform: uppercase;}
+.header .menu .menu-right ul li a .fa{margin-right: 5px;}
+.header .menu #show-sidebar, .header .menu #hide-sidebar{font-size: 30px; margin: 10px; color: orange; display: none;}
+/* end header */
+
+/* sidebar */
+.sidebar{height: 80%; background-color: #dddddd; width: 20%; font-size: 15px; float: left; z-index: 1000; }
+.sidebar ul{margin-left: 20px;}
+.sidebar ul li{margin-top: 30px; cursor: pointer; font-weight: bold;} 
+.sidebar ul li:first-child{margin-top: 15px;}
+.sidebar ul li .fa{float: right; margin-right: 10px;}
+.sidebar ul li > ul{z-index: 100; top: 75px; display: none;}
+.sidebar ul li:hover > ul{position: fixed; display: block; height: 500px; background-color: #ececec; margin-left: 18.7%; padding: 0px 100px 10px 40px;;}
+.sidebar ul li:hover > a{color: orange;}
+.sidebar ul li a{text-decoration: none; color: #444;}
+.sidebar a{text-transform: uppercase;}
+/* end sidebar */
+
+/* slider */
+.slider{width: 80%; padding-left: 10px; margin-left: 20%;}
+.slider .carousel-item img{width: 100%; height: 500px}
+.slider .carousel-item{transition: transform 2s ease, opacity .5s ease-out;}
+/* end slider */
+
+/* content */
+.content{margin: 50px 0px}
+.content img{width: 100%; padding: 20px; transition: 0.7s; cursor: pointer;}
+.content img:hover{transform: scale(1.1);}
+/* end content */
+
+/* product */
+.product .title{font-size: 20px; background-color: orange; color: #fff; width: 300px; text-transform: uppercase; padding: 10px; position: relative; margin-bottom: 30px;} 
+.product .title:after{content: ''; width: 100px; height: 39px; border-top: 39px solid orange; border-right: 49px solid #fff; margin-left: 190px; margin-top: -29px; position: absolute;}
+.product .product-top img{width: 100%; cursor: pointer; position: relative;}
+.product .btn-product{position: absolute; top: 0; display: block; width: 70px; margin-left: -40px; visibility: hidden; opacity: 0;}
+.product .btn-product .btn{background-color: #fff;}
+.product .btn-product .fa{color: #000}
+.product .product-top:hover .btn-product{opacity: 1; visibility: visible; margin-left: 40px; transition: 0.4s;}
+.product .product-bottom .star .fa{color: orange; margin-top: 10px;}
+.product .product-bottom .name-product{font-weight: 900; color: #000; font-size: 20px; margin-top: 10px;}
+.product .product-bottom .price-product{color: red; font-weight: bold; margin-top: 10px; font-size: 18px; margin-bottom: 30px;}
+/* end product */
+
+/* footer */
+.footer-v1.bg-img{background-color: orange; background-repeat: repeat;}
+.footer-v1 .headline{display: block; margin: 10px 0 25px 0; border-bottom: 1px dotted #e4e9f0; color: white; font-size: 20px;}
+.footer-v1 .headline p{margin: 0 0 -2px 0; padding-bottom: 5px; display: inline-block; border-bottom: 2px solid #7e57c2; }
+.footer-v1 .link-list > li{padding: 7px 0px;}
+.footer-v1 a{text-decoration: none;}
+.footer-v1 .link-list > li > a , .link-list > li> i{color:#eee; font-size: 16px;}
+/* end footer */
+

@@ -1,0 +1,51 @@
+/* header */
+@media only screen and (max-width: 980px){
+    .header .menu{height: 115px; flex-wrap: wrap; border-bottom: none;}  
+    .header .menu .form-search{width: 100%;}
+    .header .menu .menu-right{width: 100%;}
+    .header .menu .menu-right ul{margin: 10px 0px; width: 100%;}
+    .header .menu .menu-right ul li{width: 100%; height: 60px;}
+    .header .menu .menu-right ul li a{font-size: 11px; }
+    .header .menu .menu-right ul li a .fa{display: block;}
+}
+@media (min-width: 320px) and (max-width: 576px){
+    .header .menu #show-sidebar{display: block; cursor: pointer;}
+}
+@media (min-width: 577px) and (max-width: 979px){
+    .header .menu #show-sidebar{display: block; cursor: pointer;}
+}
+/* end header */
+
+/* sidebar */
+@media only screen and (max-width: 980px){
+    .sidebar{height: 500px; position: fixed; width: 30%; top: 180px; margin-left: 0px;}
+    .sidebar ul li:hover > ul{position: fixed; top: 180px ;height: auto; margin-left: 27.5%; }
+    .sidebar ul li a{font-size: 14px;}
+    .sidebar ul li{margin-top: 25px;}  
+}
+@media (min-width: 320px) and (max-width: 576px){
+    .sidebar{width: 60%; position: fixed; top: 180px; margin-left: 2px; display: none;}
+    .sidebar ul li:hover > ul{height: 500px; margin-left: 44.5%; padding: 0px 50px 10px 40px; top: 180px;}
+    .sidebar ul li{margin-top: 20px;} 
+}
+@media (min-width: 577px) and (max-width: 979px){
+    .sidebar{width: 60%; display: none;}
+    .sidebar ul li:hover > ul{height: 500px; margin-left: 57.5%; padding: 0px 50px 10px 40px; top: 180px;}
+}
+/* end sidebar */
+
+/* slider */
+@media only screen and (max-width: 980px){
+    .slider{height: 401px; width: 70%; float: right}
+    .slider .carousel-item img{height: 443px; }
+}
+@media (min-width: 320px) and (max-width: 576px){
+    .slider{width: 100%; margin-left: 0; margin-top: 70px; padding: 0 1px}
+    .slider .carousel-item img{height: 200px}
+}
+@media (min-width: 577px) and (max-width: 979px){
+    .slider{width: 100%;}
+    .slider .carousel-inner{margin-top: 30px;}
+    .slider .carousel-item img{height: 300px; padding: 10px 5px; margin-top: 10px;}
+}
+/* end slider */
